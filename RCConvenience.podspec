@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RCConvenience"
-  s.version      = "0.1"
+  s.version      = "0.1.1"
   s.summary      = "Convenience Methods and Categories"
   s.description  = <<-DESC
                    Categories, #defines, and methods to make life easier
