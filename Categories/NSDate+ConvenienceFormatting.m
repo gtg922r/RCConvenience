@@ -61,6 +61,21 @@
     
 }
 
+- (NSString *)RC_stringWithShortDayOfWeekAndDateWithYear{
+    
+    static NSDateFormatter *dateFormatWithDayOfWeekAndDate = nil;
+    
+    if(dateFormatWithDayOfWeekAndDate ==nil){
+        dateFormatWithDayOfWeekAndDate = [[NSDateFormatter alloc] init];
+        dateFormatWithDayOfWeekAndDate.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+        dateFormatWithDayOfWeekAndDate.dateFormat = @"EEE', 'MMM' 'dd ";
+        dateFormatWithDayOfWeekAndDate.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+    }
+    
+    return [dateFormatWithDayOfWeekAndDate stringFromDate:self];
+    
+}
+
 - (NSString *)RC_stringWithShortDate{
     
     static NSDateFormatter *dateFormatWithDayOfWeekAndDate = nil;

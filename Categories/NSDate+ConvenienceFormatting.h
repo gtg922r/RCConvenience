@@ -16,6 +16,7 @@
 - (NSString *)RC_stringWithMDYYDate;
 - (NSString *)RC_stringWithShortDayOfWeek;
 - (NSString *)RC_stringWithDayOfWeekAndDateWithYear;
+- (NSString *)RC_stringWithShortDayOfWeekAndDateWithYear;
 
 + (NSDate *)dateWithTimeFrom:(NSDate *)time andDateFrom:(NSDate *)date;
 @end
