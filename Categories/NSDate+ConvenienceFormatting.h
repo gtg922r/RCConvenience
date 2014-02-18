@@ -16,6 +16,11 @@
 - (NSString *)RC_stringWithMDYYDate;
 - (NSString *)RC_stringWithShortDayOfWeek;
 - (NSString *)RC_stringWithDayOfWeekAndDateWithYear;
+
+/**
+ *  Formats date to match Wed, Jan 17
+ *  @returns Formated NSString
+ */
 - (NSString *)RC_stringWithShortDayOfWeekAndDateWithYear;
 
 + (NSDate *)dateWithTimeFrom:(NSDate *)time andDateFrom:(NSDate *)date;
